@@ -9,7 +9,10 @@
                  [com.yetanalytics/re-mdl "0.1.8" :exclusions [cljsjs/react-with-addons]]
                  [cljsjs/react-with-addons "15.5.4-0"]
                  [org.roman01la/cljss "1.6.2"]
-                 [com.github.sarxos/webcam-capture "0.3.12"]]
+                 [com.github.sarxos/webcam-capture "0.3.12"]
+                 [org.clojure/data.json "0.2.6"]
+                 [com.cognitect/transit-cljs "0.8.256"]
+                 [cljs-http "0.1.45"]]
 
   :main cljs-101.core
 

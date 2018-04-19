@@ -41,6 +41,21 @@ goog.addDependency("../reagent/impl/template.js", ['reagent.impl.template'], ['r
 goog.addDependency("../cljsjs/react-dom/development/react-dom.inc.js", ['cljsjs.react.dom'], ['cljsjs.react'], {'foreign-lib': true});
 goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'cljsjs.react.dom', 'reagent.debug']);
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'reagent.dom']);
+goog.addDependency("../no/en/core.js", ['no.en.core'], ['cljs.core', 'goog.crypt.base64', 'clojure.string', 'cljs.reader']);
+goog.addDependency("../com/cognitect/transit/util.js", ['com.cognitect.transit.util'], ['goog.object']);
+goog.addDependency("../com/cognitect/transit/eq.js", ['com.cognitect.transit.eq'], ['com.cognitect.transit.util']);
+goog.addDependency("../com/cognitect/transit/types.js", ['com.cognitect.transit.types'], ['com.cognitect.transit.util', 'com.cognitect.transit.eq', 'goog.math.Long']);
+goog.addDependency("../com/cognitect/transit/delimiters.js", ['com.cognitect.transit.delimiters'], []);
+goog.addDependency("../com/cognitect/transit/caching.js", ['com.cognitect.transit.caching'], ['com.cognitect.transit.delimiters']);
+goog.addDependency("../com/cognitect/transit/impl/decoder.js", ['com.cognitect.transit.impl.decoder'], ['com.cognitect.transit.util', 'com.cognitect.transit.delimiters', 'com.cognitect.transit.caching', 'com.cognitect.transit.types']);
+goog.addDependency("../com/cognitect/transit/impl/reader.js", ['com.cognitect.transit.impl.reader'], ['com.cognitect.transit.impl.decoder', 'com.cognitect.transit.caching']);
+goog.addDependency("../com/cognitect/transit/handlers.js", ['com.cognitect.transit.handlers'], ['com.cognitect.transit.util', 'com.cognitect.transit.types', 'goog.math.Long']);
+goog.addDependency("../com/cognitect/transit/impl/writer.js", ['com.cognitect.transit.impl.writer'], ['com.cognitect.transit.util', 'com.cognitect.transit.caching', 'com.cognitect.transit.handlers', 'com.cognitect.transit.types', 'com.cognitect.transit.delimiters', 'goog.math.Long']);
+goog.addDependency("../com/cognitect/transit.js", ['com.cognitect.transit'], ['com.cognitect.transit.util', 'com.cognitect.transit.impl.reader', 'com.cognitect.transit.impl.writer', 'com.cognitect.transit.types', 'com.cognitect.transit.eq', 'com.cognitect.transit.impl.decoder', 'com.cognitect.transit.caching']);
+goog.addDependency("../cognitect/transit.js", ['cognitect.transit'], ['com.cognitect.transit.eq', 'cljs.core', 'com.cognitect.transit.types', 'com.cognitect.transit', 'goog.math.Long']);
+goog.addDependency("../cljs_http/util.js", ['cljs_http.util'], ['no.en.core', 'goog.Uri', 'cljs.core', 'goog.userAgent', 'cognitect.transit', 'clojure.string']);
+goog.addDependency("../cljs_http/core.js", ['cljs_http.core'], ['goog.net.Jsonp', 'goog.net.XhrIo', 'cljs.core', 'cljs_http.util', 'cljs.core.async', 'goog.net.EventType', 'clojure.string', 'goog.net.ErrorCode']);
+goog.addDependency("../cljs_http/client.js", ['cljs_http.client'], ['cljs_http.core', 'no.en.core', 'goog.Uri', 'cljs.core', 'cljs_http.util', 'cljs.core.async', 'clojure.string', 'cljs.reader']);
 goog.addDependency("../re_mdl/components/badge.js", ['re_mdl.components.badge'], ['cljs.core']);
 goog.addDependency("../re_mdl/components/grid.js", ['re_mdl.components.grid'], ['cljs.core']);
 goog.addDependency("../re_mdl/components/card.js", ['re_mdl.components.card'], ['cljs.core']);
@@ -61,4 +76,4 @@ goog.addDependency("../re_mdl/components/button.js", ['re_mdl.components.button'
 goog.addDependency("../cljsjs/dialog-polyfill/development/dialog-polyfill.inc.js", ['cljsjs.dialog_polyfill'], [], {'foreign-lib': true});
 goog.addDependency("../re_mdl/components/textfield.js", ['re_mdl.components.textfield'], ['re_mdl.util', 'reagent.core', 'cljs.core', 're_mdl.components.button']);
 goog.addDependency("../re_mdl/core.js", ['re_mdl.core'], ['re_mdl.components.badge', 're_mdl.components.grid', 're_mdl.components.card', 're_mdl.components.layout', 're_mdl.components.toggle', 'cljsjs.material', 're_mdl.components.dialog', 'cljs.core', 're_mdl.components.loading', 're_mdl.components.snackbar', 're_mdl.components.slider', 're_mdl.components.tooltip', 're_mdl.components.chip', 're_mdl.components.table', 're_mdl.components.menu', 're_mdl.components.list', 're_mdl.components.button', 'cljsjs.dialog_polyfill', 're_mdl.components.textfield']);
-goog.addDependency("../cljs_101/hello.js", ['cljs_101.hello'], ['reagent.core', 'cljs.core', 're_mdl.core']);
+goog.addDependency("../cljs_101/hello.js", ['cljs_101.hello'], ['reagent.core', 'cljs.core', 'cljs_http.client', 're_mdl.core', 'cljs.core.async']);

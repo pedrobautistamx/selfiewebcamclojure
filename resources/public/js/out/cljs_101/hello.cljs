@@ -1,63 +1,72 @@
 (ns cljs-101.hello
+  (:require-macros [cljs.core.async.macros :refer [go]])
+
   (:require [reagent.core :as reagent]
-            [re-mdl.core  :as mdl]))
-
-            (defn takephoto []
-              (def ruta "a")
-              (println (str "funcion " ruta))
-
-              )
+            [re-mdl.core  :as mdl]
+            [cljs-http.client :as http]
+            [cljs.core.async :refer [<!]]
 
 
+            ;[cljs-101.camera :as camara]
+            ))
+                      ;  [cljs-101.core :include-macros true :refer [slurp]])
+        ;[com.github.sarxos.webcam Webcam WebcamResolution]
 
+;(def jsondata (t/read (t/reader :json) (.readFileSync fs "/home/pbautista/primerjson.json" "utf8")))
+;(def r (t/reader :primerjson.json))
 
-
-(defn panel
-  "This is a wide card with a share button."
-  []
-  [mdl/card
-   :attr   {:style {:width  "512px"}}
-   :shadow 2
-   :children
-   [[mdl/card-title
-     :attr   {:style {:height     "196px"
-                      :color      "#fff"
-                      :background "url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover"}}
-     :header :h2
-     :child  "Welcome"]
-    [mdl/card-supporting-text
-     :children ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Mauris sagittis pellentesque lacus eleifend lacinia..."]]
-    [mdl/card-actions
-     :border? true
-     :children
-     [[mdl/button
-       :el             :a
-       :colored?       true
-       :ripple-effect? true
-       :child          "Get Started"]]]
-    [mdl/card-menu
-     :children [[mdl/button
-                 :attr           {:style {:color "pink"}}
-                 :icon?          true
-                 :ripple-effect? true
-                 :child          [:i.material-icons "share"]]]]]])
+(go (let [response (<! (http/get "http://localhost:3000/cams"))]
+      (.log js/console (str (:body response)))))
 
 
 
+            ; (defn getnames []
+            ;
+            ; (let [names (json/read-str (slurp "/home/pbautista/primerjson.json"))]
+            ;
+            ; (.log js/console names  )
+            ;
+            ;
+            ; )
+            ; )
 
 
-(defn ^:export init[]
-  ;(js/alert "Hello from ClojureScript!")
-  (.log js/console "Hello from ClojureScript!")
-;(reagent/render [panel] (.getElementById js/document "app"))
-  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))
-  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))
-  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))
-  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))
-  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))
-  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))
-)
+; (defn panel
+;   "This is a wide card with a share button."
+;   []
+;   [mdl/card
+;    :attr   {:style {:width  "512px"}}
+;    :shadow 2
+;    :children
+;    [[mdl/card-title
+;      :attr   {:style {:height     "196px"
+;                       :color      "#fff"
+;                       :background "url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover"}}
+;      :header :h2
+;      :child  "Welcome"]
+;     [mdl/card-supporting-text
+;      :children ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+;                  Mauris sagittis pellentesque lacus eleifend lacinia..."]]
+;     [mdl/card-actions
+;      :border? true
+;      :children
+;      [[mdl/button
+;        :el             :a
+;        :colored?       true
+;        :ripple-effect? true
+;        :child          "Get Started"]]]
+;     [mdl/card-menu
+;      :children [[mdl/button
+;                  :attr           {:style {:color "pink"}}
+;                  :icon?          true
+;                  :ripple-effect? true
+;                  :child          [:i.material-icons "share"]]]]]])
+
+
+
+
+
+
 
 
   (defn text-field-demo-text
@@ -136,3 +145,16 @@
      :children
      [[:a {:href "#"} "Help"]
       [:a {:href "#"} "Privacy & Terms"]]]]])
+
+      (defn ^:export init[]
+        ;(js/alert "Hello from ClojureScript!")
+        (.log js/console "Hello from ClojureScript!")
+      ;(reagent/render [panel] (.getElementById js/document "app"))
+        ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))
+        ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))
+        (reagent/render [text-field-demo-text] (.getElementById js/document "app"))
+        (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))
+        (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))
+        (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))
+        ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))
+      )

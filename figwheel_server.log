@@ -5851,3 +5851,1178 @@ Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
 notifying browser that file changed:  resources/public/js/out/goog/deps.js
 notifying browser that file changed:  resources/public/js/out/cljs_deps.js
 notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.552 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: com.github.sarxos.webcam.Webcam, could not locate com/github/sarxos/webcam/Webcam.cljs, com/github/sarxos/webcam/Webcam.cljc, or JavaScript source providing "com.github.sarxos.webcam.Webcam" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.181 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs   line:1  column:1  ----[0m
+
+  [1mOnly :as, :refer and :rename options supported in :require / :require-macros; offending spec: [com.github.sarxos.webcam Webcam WebcamResolution] at line 1 src-cljs/cljs_101/hello.cljs[0m
+
+  [33m1[0m  [1m(ns cljs-101.hello[0m
+  [0m [0m  [33m^--- Only :as, :refer and :rename options supported in :require / :require-macros; offending spec: [com.github.sarxos.webcam Webcam WebcamResolution] at line 1 src-cljs/cljs_101/hello.cljs[0m
+  [36m2[0m  [36m  (:require [reagent.core :as reagent][0m
+  [36m3[0m  [36m            [re-mdl.core  :as mdl][0m
+  [36m4[0m  [36m            [com.github.sarxos.webcam Webcam WebcamResolution])[0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:65  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m61[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m62[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m63[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m64[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m65[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m66[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m67[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m68[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m69[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:66  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m62[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m63[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m64[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m65[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m66[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m67[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m68[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m69[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:67  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m63[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m64[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m65[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m66[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m67[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m68[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m69[0m  [36m)[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:68  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m64[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m65[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m66[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m67[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m68[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m69[0m  [36m)[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m  (defn text-field-demo-text[0m
+  [36m73[0m  [36m    [][0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.822 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.334 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.3 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.323 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.299 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.29 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.307 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.296 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.28 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.305 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:70  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m66[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m67[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m70[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m67[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m71[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:72  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m72[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:73  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m73[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.754 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.375 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.285 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: clojure.data.json, could not locate clojure/data/json.cljs, clojure/data/json.cljc, or JavaScript source providing "clojure.data.json" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:10  column:9  ----[0m
+
+  [1mNo such namespace: transit, could not locate transit.cljs, transit.cljc, or JavaScript source providing "transit"[0m
+
+  [36m 9[0m  [36m;(def jsondata (t/read (t/reader :json) (.readFileSync fs "/home/pbautista/primerjson.json" "utf8")))[0m
+  [33m10[0m  [1m(def r (transit/reader "/home/pbautista/primerjson.json"))[0m
+  [0m  [0m  [33m        ^--- No such namespace: transit, could not locate transit.cljs, transit.cljc, or JavaScript source providing "transit"[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:10  column:9  ----[0m
+
+  [1mUse of undeclared Var transit/reader[0m
+
+  [36m 9[0m  [36m;(def jsondata (t/read (t/reader :json) (.readFileSync fs "/home/pbautista/primerjson.json" "utf8")))[0m
+  [33m10[0m  [1m(def r (transit/reader "/home/pbautista/primerjson.json"))[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var transit/reader[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:68  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m64[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m65[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m66[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m67[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m68[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m69[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m70[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m71[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m72[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:69  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m65[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m66[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m67[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m69[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m70[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m71[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m72[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:70  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m66[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m67[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m70[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m71[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m72[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m67[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m70[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m71[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m72[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m)[0m
+  [36m74[0m  [36m[0m
+  [36m75[0m  [36m[0m
+  [36m76[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.761 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.307 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: foo.core, could not locate foo/core.cljs, foo/core.cljc, or JavaScript source providing "foo.core" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.278 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: foo.core, could not locate foo/core.cljs, foo/core.cljc, or JavaScript source providing "foo.core" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.436 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.466 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.433 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.403 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:20  column:26  ----[0m
+
+  [1mNo such namespace: json, could not locate json.cljs, json.cljc, or JavaScript source providing "json"[0m
+
+  [36m18[0m  [36m            (defn getnames [][0m
+  [36m19[0m  [36m[0m
+  [33m20[0m  [1m            (let [names (json/read-str (slurp "/home/pbautista/primerjson.json"))][0m
+  [0m  [0m  [33m                         ^--- No such namespace: json, could not locate json.cljs, json.cljc, or JavaScript source providing "json"[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m            (.log js/console names  )[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m            )[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:20  column:26  ----[0m
+
+  [1mUse of undeclared Var json/read-str[0m
+
+  [36m18[0m  [36m            (defn getnames [][0m
+  [36m19[0m  [36m[0m
+  [33m20[0m  [1m            (let [names (json/read-str (slurp "/home/pbautista/primerjson.json"))][0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var json/read-str[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m            (.log js/console names  )[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m            )[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:20  column:41  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/slurp[0m
+
+  [36m18[0m  [36m            (defn getnames [][0m
+  [36m19[0m  [36m[0m
+  [33m20[0m  [1m            (let [names (json/read-str (slurp "/home/pbautista/primerjson.json"))][0m
+  [0m  [0m  [33m                                        ^--- Use of undeclared Var cljs-101.hello/slurp[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m            (.log js/console names  )[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m            )[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:70  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m66[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m67[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m70[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m67[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m71[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:72  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m72[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:73  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m73[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.61 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:12  column:9  ----[0m
+
+  [1mNo such namespace: transit, could not locate transit.cljs, transit.cljc, or JavaScript source providing "transit"[0m
+
+  [36m11[0m  [36m;(def jsondata (t/read (t/reader :json) (.readFileSync fs "/home/pbautista/primerjson.json" "utf8")))[0m
+  [33m12[0m  [1m(def r (transit/reader "/home/pbautista/primerjson.json"))[0m
+  [0m  [0m  [33m        ^--- No such namespace: transit, could not locate transit.cljs, transit.cljc, or JavaScript source providing "transit"[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:12  column:9  ----[0m
+
+  [1mUse of undeclared Var transit/reader[0m
+
+  [36m11[0m  [36m;(def jsondata (t/read (t/reader :json) (.readFileSync fs "/home/pbautista/primerjson.json" "utf8")))[0m
+  [33m12[0m  [1m(def r (transit/reader "/home/pbautista/primerjson.json"))[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var transit/reader[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:70  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m66[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m67[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m70[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m67[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m71[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:72  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m68[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m72[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m73[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:73  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m69[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m72[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m73[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m74[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m)[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.634 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   resources/public/js/out/cognitect/transit.cljs   line:332  column:1  ----[0m
+
+  [1muri? already refers to: cljs.core/uri? being replaced by: cognitect.transit/uri?[0m
+
+  [36m328[0m  [36m  "Construct a URI from a string."[0m
+  [36m329[0m  [36m  [s][0m
+  [36m330[0m  [36m  (ty/uri s))[0m
+  [36m331[0m  [36m[0m
+  [33m332[0m  [1m(defn uri?[0m
+  [0m   [0m  [33m^--- uri? already refers to: cljs.core/uri? being replaced by: cognitect.transit/uri?[0m
+  [36m333[0m  [36m  "Returns true if x is a transit URI value, false otherwise."[0m
+  [36m334[0m  [36m  [x][0m
+  [36m335[0m  [36m  (ty/isURI x))[0m
+  [36m336[0m  [36m[0m
+  [36m337[0m  [36m(defn uuid[0m
+
+[36m----  Compiler Warning : Please see resources/public/js/out/cognitect/transit.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:13  column:9  ----[0m
+
+  [1mNo such namespace: transit, could not locate transit.cljs, transit.cljc, or JavaScript source providing "transit"[0m
+
+  [36m12[0m  [36m;(def jsondata (t/read (t/reader :json) (.readFileSync fs "/home/pbautista/primerjson.json" "utf8")))[0m
+  [33m13[0m  [1m(def r (transit/reader "/home/pbautista/primerjson.json"))[0m
+  [0m  [0m  [33m        ^--- No such namespace: transit, could not locate transit.cljs, transit.cljc, or JavaScript source providing "transit"[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:13  column:9  ----[0m
+
+  [1mUse of undeclared Var transit/reader[0m
+
+  [36m12[0m  [36m;(def jsondata (t/read (t/reader :json) (.readFileSync fs "/home/pbautista/primerjson.json" "utf8")))[0m
+  [33m13[0m  [1m(def r (transit/reader "/home/pbautista/primerjson.json"))[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var transit/reader[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m67[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m68[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m71[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:72  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m68[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m72[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:73  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m73[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:74  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m74[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m[0m
+  [36m79[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.903 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m67[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m68[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m71[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:72  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m68[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m72[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:73  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m73[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:74  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m74[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m[0m
+  [36m79[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.757 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.341 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: cljs-101.camera, could not locate cljs_101/camera.cljs, cljs_101/camera.cljc, or JavaScript source providing "cljs-101.camera" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.321 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: cljs-101.camera, could not locate cljs_101/camera.cljs, cljs_101/camera.cljc, or JavaScript source providing "cljs-101.camera" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.313 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: cljs-101.camera, could not locate cljs_101/camera.cljs, cljs_101/camera.cljc, or JavaScript source providing "cljs-101.camera" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.173 seconds.[0m
+[36m----  Could not Read  src-cljs/cljs_101/hello.cljs   line:155 ----[0m
+
+  [1m/home/pbautista/CLojureJavaScript/cljs-101/src-cljs/cljs_101/hello.cljs [line 155, col 1] Unexpected EOF while reading item 9 of list, starting at line 1 and column 1.[0m
+
+[36m----  Reader Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.197 seconds.[0m
+[36m----  Could not Read  src-cljs/cljs_101/hello.cljs   line:155 ----[0m
+
+  [1m/home/pbautista/CLojureJavaScript/cljs-101/src-cljs/cljs_101/hello.cljs [line 155, col 1] Unexpected EOF while reading item 9 of list, starting at line 1 and column 1.[0m
+
+[36m----  Reader Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m67[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m68[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m71[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:72  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m68[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m72[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:73  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m69[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m73[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m74[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:74  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m70[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m72[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m73[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m74[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m75[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m76[0m  [36m)[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m[0m
+  [36m79[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.81 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.281 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: cljs-101.camera, could not locate cljs_101/camera.cljs, cljs_101/camera.cljc, or JavaScript source providing "cljs-101.camera" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.304 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: cljs-101.camera, could not locate cljs_101/camera.cljs, cljs_101/camera.cljc, or JavaScript source providing "cljs-101.camera" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.655 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.298 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: cljs-101.camera, could not locate cljs_101/camera.cljs, cljs_101/camera.cljc, or JavaScript source providing "cljs-101.camera" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.303 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: cljs-101.camera, could not locate cljs_101/camera.cljs, cljs_101/camera.cljc, or JavaScript source providing "cljs-101.camera" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:69  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m65[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m66[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m67[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m68[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m69[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m70[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m71[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m72[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:70  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m66[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m67[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m68[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m70[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m71[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m72[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m67[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m68[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m71[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m72[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:72  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m68[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m71[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m72[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m73[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m)[0m
+  [36m75[0m  [36m[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.719 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.316 seconds.[0m
+[36m----  Could not Analyze  src-cljs/cljs_101/hello.cljs  ----[0m
+
+  [1mNo such namespace: cljs-101.camera, could not locate cljs_101/camera.cljs, cljs_101/camera.cljc, or JavaScript source providing "cljs-101.camera" [0m
+
+[36m----  Analysis Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:69  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m65[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m66[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m67[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m68[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m69[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m70[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m71[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m72[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:70  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m66[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m67[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m68[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m70[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m71[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m72[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:71  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m67[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m68[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m71[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m72[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m73[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:72  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m68[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m69[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m70[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m71[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m72[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m73[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m74[0m  [36m)[0m
+  [36m75[0m  [36m[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.849 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:73  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m69[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m70[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m72[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m73[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m74[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m75[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m76[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m77[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m78[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:74  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m70[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m71[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m72[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m73[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m74[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m75[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m76[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m77[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m78[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:75  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m71[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m72[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m73[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m74[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m75[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m76[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m77[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m78[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:76  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m72[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m73[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m74[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m75[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m76[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m77[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m78[0m  [36m)[0m
+  [36m79[0m  [36m[0m
+  [36m80[0m  [36m[0m
+  [36m81[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 2.723 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:76  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/text-field-demo-text[0m
+
+  [36m72[0m  [36m  (.log js/console "Hello from ClojureScript!")[0m
+  [36m73[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m74[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m75[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [33m76[0m  [1m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/text-field-demo-text[0m
+  [36m77[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m78[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m79[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m80[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m81[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:77  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/choise-webcam[0m
+
+  [36m73[0m  [36m;(reagent/render [panel] (.getElementById js/document "app"))[0m
+  [36m74[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m75[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m76[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [33m77[0m  [1m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/choise-webcam[0m
+  [36m78[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [36m79[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m80[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m81[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:78  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+
+  [36m74[0m  [36m  ;(reagent/render [footer-demo-mega] (.getElementById js/document "foo"))[0m
+  [36m75[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m76[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m77[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [33m78[0m  [1m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/button-demo-colored-raised[0m
+  [36m79[0m  [36m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [36m80[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m81[0m  [36m)[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[36m----  Compiler Warning on   src-cljs/cljs_101/hello.cljs   line:79  column:20  ----[0m
+
+  [1mUse of undeclared Var cljs-101.hello/jumbo[0m
+
+  [36m75[0m  [36m  ;(reagent/render [loading-progress-demo-indeterminate] (.getElementById js/document "app"))[0m
+  [36m76[0m  [36m  (reagent/render [text-field-demo-text] (.getElementById js/document "app"))[0m
+  [36m77[0m  [36m  (reagent/render [choise-webcam] (.getElementById js/document "choiseWebcam"))[0m
+  [36m78[0m  [36m  (reagent/render [button-demo-colored-raised] (.getElementById js/document "button"))[0m
+  [33m79[0m  [1m  (reagent/render [jumbo] (.getElementById js/document "jumbotron1"))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var cljs-101.hello/jumbo[0m
+  [36m80[0m  [36m  ;(reagent/render [getnames] (.getElementById js/document "jumbotron1"))[0m
+  [36m81[0m  [36m)[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m[0m
+  [36m84[0m  [36m  (defn text-field-demo-text[0m
+
+[36m----  Compiler Warning : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.665 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.561 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.58 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.557 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.529 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.547 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.564 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.666 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.602 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.682 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[31mFailed to compile build :dev from ["src-cljs"] in 0.356 seconds.[0m
+[36m----  Could not Read  src-cljs/cljs_101/hello.cljs   line:161 ----[0m
+
+  [1m/home/pbautista/CLojureJavaScript/cljs-101/src-cljs/cljs_101/hello.cljs [line 161, col 1] Unexpected EOF while reading item 8 of list, starting at line 18 and column 1.[0m
+
+[36m----  Reader Error : Please see src-cljs/cljs_101/hello.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src-cljs"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.662 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_101/hello.js
